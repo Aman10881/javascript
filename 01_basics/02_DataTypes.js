@@ -65,7 +65,7 @@ const bigNumber = 3456789867776666666n // add n at last to make it bigInt
 
 
 // typeof datatypes of  primitive
-
+/*
 console.log(typeof score); // result = number 
 console.log(typeof score2); // result = string 
 console.log(typeof score3); // result = boolean
@@ -101,4 +101,33 @@ console.log("Hello world! ");
 console.log(typeof heroes) // result = object
 console.log(typeof myobj) // result = object
 console.log(typeof myfunction) // result = function ->important **
+*/
+
+
+/*+++++++++++++++++++++++++++Stack and Heap +++++++++++++++++++++++++++++++++*/
+
+// Stack (Primtive), Heap (Non-Primtive)
+
+// Stack value copy is passed
+
+let myname="aman"
+
+let mysecondname=myname
+mysecondname="nikil"
+
+console.log(myname);
+console.log(mysecondname);
+
+
+// Heap -> value is value is passed by refernce 
+
+let userOne = {
+    name:"aman",
+    email:"aman@123"
+}
+let userTwo=userOne
+userTwo.name="nikil"
+
+console.log(userOne.name);
+console.log(userTwo.name);
 
